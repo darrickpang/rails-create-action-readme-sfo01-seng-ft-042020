@@ -40,3 +40,19 @@ Processing by PostsController#show as HTML
   [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
   Rendered posts/show.html.erb within layouts/application (0.4ms)
 Completed 200 OK in 27ms (Views: 10.4ms | ActiveRecord: 0.2ms)
+Started GET "/" for 127.0.0.1 at 2020-05-14 19:53:53 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /home/darrickpang/.rvm/gems/ruby-2.7.0/gems/railties-5.0.7.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/darrickpang/.rvm/gems/ruby-2.7.0/gems/railties-5.0.7.2/lib/rails/templates/rails/welcome/index.html.erb (5.8ms)
+Completed 200 OK in 30ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2020-05-14 20:37:15 -0700
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 398ms (Views: 384.5ms | ActiveRecord: 1.1ms)
+
+
